@@ -49,6 +49,8 @@
       padding-left: 22px;
       padding-top: 10px;
     }
-   
+    .container {
+      display: unset !important;
+    }
   }
   
