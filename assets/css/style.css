@@ -31,6 +31,15 @@
     margin-top: 30px;
   }
   
+  
+
   #downloadLink {
     display: none;
   }
+
+  @media (max-width: 768px) {
+    #outputImageContainer img {
+      max-width: 100%;
+    }  
+  }
+  
