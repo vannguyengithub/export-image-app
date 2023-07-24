@@ -1,6 +1,4 @@
 
-  
-
 function updateImage() {
     const name = document.getElementById("inputName").value;
   
@@ -49,7 +47,7 @@ function updateImage() {
       const downloadLink = document.createElement("a");
       downloadLink.download = "image.png";
       downloadLink.href = dataURL;
-      downloadLink.textContent = "Tải xuống hình ảnh";
+      downloadLink.textContent = "Export image";
   
       outputImageContainer.appendChild(imageElement);
       outputImageContainer.appendChild(downloadLink);
