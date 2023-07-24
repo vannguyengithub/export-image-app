@@ -34,8 +34,8 @@ function updateImage() {
     const icon = new Image();
     icon.src = "assets/images/open-hair-scissors.png"; //
     const iconSize = 20;
-    const iconX = x + textWidth + 5; 
-    const iconY = y - 50;
+    const iconX = x + textWidth - 17; 
+    const iconY = y - 55;
   
     icon.onload = function () {
       ctx.drawImage(icon, iconX, iconY, iconSize, iconSize);
