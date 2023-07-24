@@ -59,3 +59,11 @@ function updateImage() {
   
   document.getElementById("inputName").addEventListener("input", updateImage);
   
+
+  function clearInput() {
+    const inputName = document.getElementById("inputName");
+    inputName.value = ''; 
+    updateImage();
+  }
+  
+  document.getElementById("clearButton").addEventListener("click", clearInput);
