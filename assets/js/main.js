@@ -1,11 +1,12 @@
 
+  
 
 function updateImage() {
     const name = document.getElementById("inputName").value;
   
     const canvas = document.createElement("canvas");
-    canvas.width = 250; // 
-    canvas.height = 100;
+    canvas.width = 1033; // Tăng chiều rộng canvas để chứa biểu tượng
+    canvas.height = 657;
     const ctx = canvas.getContext("2d");
   
     // 
@@ -18,7 +19,7 @@ function updateImage() {
   
     // 
     ctx.fillStyle = color;
-    ctx.font = "bold 24px " + font;
+    ctx.font = "bold 50px " + font;
     const textWidth = ctx.measureText(name).width;
     const textHeight = 24; //
   
@@ -34,7 +35,7 @@ function updateImage() {
     icon.src = "assets/images/open-hair-scissors.png"; //
     const iconSize = 20;
     const iconX = x + textWidth + 5; 
-    const iconY = y - 25;
+    const iconY = y - 50;
   
     icon.onload = function () {
       ctx.drawImage(icon, iconX, iconY, iconSize, iconSize);
